@@ -3,7 +3,7 @@ import numpy as np
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 
-#st.cache_data.clear()
+#@st.cache_data.clear()
 def get_model():
     model_name = "DeepChem/ChemBERTa-77M-MTR"
     tokenizer = AutoTokenizer.from_pretrained(model_name)
